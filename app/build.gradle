@@ -10,6 +10,7 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
     }
     buildTypes {
         debug {
@@ -33,4 +34,7 @@ dependencies {
     compile 'com.buddybuild:sdk:0.0.84@aar'
     compile 'com.squareup:seismic:1.0.2'
     compile 'com.faendir:acra:4.10.0'
+
+    // Multidex
+    compile 'com.android.support:multidex:1.0.1'
 }
